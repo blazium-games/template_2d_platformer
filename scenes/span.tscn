@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/follow.gd" id="1_follow"]
+
+[node name="Follow" type="Node2D"]
+script = ExtResource("1_follow")
+[node name="SheetLens" type="Camera2D" parent="."]
+position = Vector2(200, 150)
+[node name="Field" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 400, 0, 400, 240, 0, 240)
+color = Color(0.16, 0.18, 0.22, 1)
+[node name="MovingStep" type="Polygon2D" parent="."]
+position = Vector2(180, 160)
+polygon = PackedVector2Array(-40, -8, 40, -8, 40, 8, -40, 8)
+color = Color(0.4, 0.45, 0.5, 1)
